@@ -1,0 +1,60 @@
+﻿<Window x:Class="WpfApp6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="315">
+    <Grid>
+        <Grid Margin="0,-10,0,10">
+            <Grid.ColumnDefinitions>
+                <!--最小寬度MinWidth-->
+                <ColumnDefinition MinWidth="100"  Width="315"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="125"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <MediaElement Name="mediaElement"  Visibility="Hidden" LoadedBehavior="Manual" />
+        <!--按鈕-->
+            <Canvas>
+                <TextBlock Canvas.Left="32" Canvas.Top="13" Height="23" Name="txt_title" Text="MUSIC鋪累兒" Width="200" TextAlignment="Center" />
+                <Slider Canvas.Left="9" Canvas.Top="43" Name="sd_pos" Width="266" Maximum="100" SmallChange="1"  PreviewMouseLeftButtonDown="sd_pos_ui_MouseDown" PreviewMouseLeftButtonUp="sd_pos_ui_MouseUp" IsMoveToPointEnabled="False" />
+                <Slider Canvas.Left="281" Canvas.Top="6" Height="70" Name="sd_vol"  Orientation="Vertical" Value="5" ValueChanged="sd_vol_ValueChanged" />
+                <Button Canvas.Left="50" Canvas.Top="65" Content="Play" Height="35" Name="btn_play" Width="55" Click="btn_play_Click" />
+                <Button Canvas.Left="140" Canvas.Top="77" Content="重播" Height="23" Name="btn_reset" Width="40" Click="btn_reset_Click" />
+                <Button Canvas.Left="100" Canvas.Top="75" Content="Prev" Height="25" Name="btn_prev" Width="45" Click="btn_prev_Click" />
+                <Button Canvas.Left="175" Canvas.Top="79" Content="Next" Height="21" Name="btn_next" Width="55" Click="btn_next_Click" />
+                
+                <CheckBox Canvas.Left="225" Canvas.Top="84"  Height="16" Name="ck_vol" Width="25" Click="ck_vol_Click" IsThreeState="False" ClickMode="Release" ClipToBounds="False" Focusable="False" >
+                    
+                </CheckBox>
+                <TextBlock Canvas.Left="175" Canvas.Top="101" Height="17" Name="txt_starttime" Text=""  TextAlignment="Right" Width="138" />
+            </Canvas>
+            <!--鬆List-->
+            <DockPanel Grid.Row="1" LastChildFill="True">
+                <ToolBar DockPanel.Dock="Top">
+                    <Button Name="btn_open" Click="btn_open_Click">++</Button>
+                    <Button Name="btn_del" Click="btn_del_Click">Delete</Button>
+                    <Button Name="btn_start" Click="btn_start_Click">Play</Button>
+                    <Button Name="btn_loadlrc" Click="btn_loadlrc_Click">Lyrics++</Button>
+                </ToolBar>
+                <ListBox Name="lb_list" DisplayMemberPath="Filename"  Grid.Row="1" MouseDoubleClick="btn_start_Click">
+                    <ListBox.ContextMenu>
+                        <ContextMenu >
+                            <MenuItem Header="+" Click="btn_open_Click" />
+                            <MenuItem Header="Delete" Click="btn_del_Click" />
+                            <MenuItem Header="Play" Click="btn_start_Click" />
+                        </ContextMenu>
+                    </ListBox.ContextMenu>
+                </ListBox>
+            </DockPanel>
+            <!--Lyrics-->
+            
+            
+            <GridSplitter Grid.Column="0" Grid.Row="0"  Width="3" Background="Gray" />
+        </Grid>
+    </Grid>
+</Window>

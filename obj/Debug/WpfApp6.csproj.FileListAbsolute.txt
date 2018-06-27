@@ -1,0 +1,15 @@
+c:\users\weizhao\source\repos\WpfApp6\WpfApp6\obj\Debug\WpfApp6.csprojAssemblyReference.cache
+c:\users\weizhao\source\repos\WpfApp6\WpfApp6\obj\Debug\MainWindow.g.cs
+c:\users\weizhao\source\repos\WpfApp6\WpfApp6\obj\Debug\App.g.cs
+c:\users\weizhao\source\repos\WpfApp6\WpfApp6\obj\Debug\WpfApp6_MarkupCompile.cache
+c:\users\weizhao\source\repos\WpfApp6\WpfApp6\obj\Debug\WpfApp6_MarkupCompile.lref
+c:\users\weizhao\source\repos\WpfApp6\WpfApp6\bin\Debug\WpfApp6.exe.config
+c:\users\weizhao\source\repos\WpfApp6\WpfApp6\bin\Debug\WpfApp6.exe
+c:\users\weizhao\source\repos\WpfApp6\WpfApp6\bin\Debug\WpfApp6.pdb
+c:\users\weizhao\source\repos\WpfApp6\WpfApp6\obj\Debug\MainWindow.baml
+c:\users\weizhao\source\repos\WpfApp6\WpfApp6\obj\Debug\WpfApp6.g.resources
+c:\users\weizhao\source\repos\WpfApp6\WpfApp6\obj\Debug\WpfApp6.Properties.Resources.resources
+c:\users\weizhao\source\repos\WpfApp6\WpfApp6\obj\Debug\WpfApp6.csproj.GenerateResource.cache
+c:\users\weizhao\source\repos\WpfApp6\WpfApp6\obj\Debug\WpfApp6.csproj.CoreCompileInputs.cache
+c:\users\weizhao\source\repos\WpfApp6\WpfApp6\obj\Debug\WpfApp6.exe
+c:\users\weizhao\source\repos\WpfApp6\WpfApp6\obj\Debug\WpfApp6.pdb
